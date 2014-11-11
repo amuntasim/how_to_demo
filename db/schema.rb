@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130906013932) do
+ActiveRecord::Schema.define(:version => 20130906041157) do
 
   create_table "how_to_content_translations", :force => true do |t|
     t.integer  "how_to_content_id"
@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(:version => 20130906013932) do
 
   create_table "how_to_contents", :force => true do |t|
     t.integer  "section_id"
-    t.integer  "order",      :default => 0
+    t.integer  "position",   :default => 0
     t.boolean  "active",     :default => true
     t.datetime "created_at",                   :null => false
     t.datetime "updated_at",                   :null => false
@@ -43,7 +43,7 @@ ActiveRecord::Schema.define(:version => 20130906013932) do
     t.boolean  "active",             :default => true
     t.integer  "sub_sections_count", :default => 0
     t.integer  "contents_count",     :default => 0
-    t.integer  "order",              :default => 0
+    t.integer  "position",           :default => 0
     t.integer  "lft"
     t.integer  "rgt"
     t.integer  "depth"
