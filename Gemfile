@@ -10,7 +10,7 @@ gem 'rails', '~>4.0.11'
 # end
 
 gem 'sqlite3', '1.3.7'
-             upgrading to rails 4
+
   
 
 # Gems used only for assets and not required
