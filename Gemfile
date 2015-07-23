@@ -5,11 +5,11 @@ gem 'rails', '~>4.0.11'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-# group :production do
-#  gem 'pg'
-# end
+group :production do
+gem 'pg'
+end
 
-gem 'sqlite3', '1.3.7'
+# gem 'sqlite3', '1.3.7'
 
   
 
@@ -28,6 +28,6 @@ gem 'sqlite3', '1.3.7'
 gem 'jquery-rails'
 
 #gem 'how_to'
-gem 'how_to', path: '../how_to'
+gem 'how_to', :github => "amuntasim/how_to", :branch => 'rails_4'
 gem 'bootstrap-sass'
 
